@@ -3,3 +3,26 @@ body {
     text-align: center;
     background-color: skyblue;
 }
+#game-info {
+    margin: 0 0 10px 0;
+    color: #333,
+}
+.hreader-container {
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 400px;
+    margin: 20px auto ;
+}
+#target {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    position: absolute;
+    top: 175px;
+    left: 225px;
+
+}
