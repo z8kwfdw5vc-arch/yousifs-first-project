@@ -1,19 +1,47 @@
 body {
+    background-color: #a3a2a2;
+    color: #222222;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: skyblue;
+    flex-direction: column;
+    margin: 0 auto;
 }
-#game-info {
-    margin: 0 0 10px 0;
-    color: #333,
-}
-.hreader-container {
-    background-color: #ffffff;
-    border: 2px solid black;
+   
+.header-container {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
     border-radius: 8px;
-    padding: 10px;
-    width: 400px;
-    margin: 20px auto ;
+    padding: 8px 20px;
+    margin: 10px auto;
+    width: 60vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 50;
+    font-size: 18px;
+    width: 70%;
+    height: 30%;
+    background: #373d61;
+    padding: 20px 0 ;
+    border-radius: 8px;
+    color: white;
+    margin: 10px 40px;
+    border: 3px solid black;
+}
+#game-container {
+   width: 600px;
+    height: 400px;
+    background-color: royalblue;
+    border: 5px solid darkslategray;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
 }
 #target {
     width: 50px;
@@ -23,25 +51,28 @@ body {
     border: 3px solid whitesmoke;
     position: absolute;
     top: 175px;
-    left: 225px;
+    left: 275px;
+    cursor: pointer;
+    
 }
-#start {
-    margin: 20px;
+#start-btn {
+    background-color: rgb(12, 182, 12);
+    margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px ;
+    justify-content: center;
+    text-align: center;
 }
-#reset {
-    margin: 20px;
+#reset-btn {
+    background-color: rgb(240, 15, 15);
+    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-#game-container {
-    width: 500px;
-    height: 400px;
-    background-color: navy blue;
-    border: 5px solid darkslategray;
-    position: relative;
-    overflow: hidden;
+    border: 2px solid #181717;
+    border-radius: 20px;
+    justify-content: center;
 }

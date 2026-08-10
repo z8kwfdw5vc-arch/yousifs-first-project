@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click The Target</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <div class="header-container">
         <h1 id="game-title">Click The Target</h1>
     <div id="game-info">
+        <div class="scoreboard">
         <p>Score: <span id="score-display">0</span></p>
         <p>Time Left: <span id="timer-display">30</span> seconds</p>
     </div>
     </div>
+    
+    </div>
     <div id="game-container">
     <div id="target"></div>
     </div>
-    <button id="start">Start </button>
-    <button id="reset">Reset </button>
+    <div class="button-container">
+    <button id="start-btn">Start </button>
+    <button id="reset-btn">Reset </button>
+    </div>
 </body>
 </html>
