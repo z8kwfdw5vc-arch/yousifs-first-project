@@ -2,12 +2,12 @@ body {
     background-color: #a3a2a2;
     color: #222222;
     font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
     margin: 0 auto;
+    text-align: center;
 }
-   
+
 .header-container {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border: 3px solid black;
     border-radius: 8px;
     padding: 8px 20px;
@@ -18,24 +18,25 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
+
 .scoreboard {
     display: flex;
     justify-content: space-between;
-    gap: 20px 50;
+    align-items: center;
+    gap: 20px;
     font-size: 18px;
     width: 70%;
-    height: 30%;
     background: #373d61;
-    padding: 20px 0 ;
+    padding: 20px;
     border-radius: 8px;
     color: white;
-    margin: 10px 40px;
+    margin: 10px auto;
     border: 3px solid black;
 }
+
 #game-container {
-   width: 600px;
+    width: 600px;
     height: 400px;
     background-color: royalblue;
     border: 5px solid darkslategray;
@@ -43,6 +44,7 @@ body {
     overflow: hidden;
     margin: 10px auto;
 }
+
 #target {
     width: 50px;
     height: 50px;
@@ -53,26 +55,23 @@ body {
     top: 175px;
     left: 275px;
     cursor: pointer;
-    
 }
-#start-btn {
-    background-color: rgb(12, 182, 12);
-    margin: 20px auto;
+
+#start-btn,
+#reset-btn {
+    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border: 2px solid black;
-    border-radius: 20px ;
-    justify-content: center;
-    text-align: center;
+    border-radius: 20px;
+    margin: 20px 5px;
 }
+
+#start-btn {
+    background-color: rgb(12, 182, 12);
+}
+
 #reset-btn {
     background-color: rgb(240, 15, 15);
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 2px solid #181717;
-    border-radius: 20px;
-    justify-content: center;
 }
