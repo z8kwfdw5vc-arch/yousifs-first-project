@@ -63,9 +63,7 @@ function startTimer() {
         targetElement.style.left = '225px';
         targetElement.style.top = '175px';
     }
-
-
-/*----------------------------- Event Listeners -----------------------------*/
-startButtonElement.addEventListener('click', startGame);
+//event listern
 targetElement.addEventListener('click', handleTargetClick);
+startButtonElement.addEventListener('click', startGame);
 resetButtonElement.addEventListener('click', resetGame);
