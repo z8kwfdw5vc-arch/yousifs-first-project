@@ -57,6 +57,9 @@ body {
     cursor: pointer;
 }
 
+#target:hover {
+    background-color: rgb(228, 74, 74);
+}
 #start-btn,
 #reset-btn {
     display: inline-block;
@@ -74,4 +77,10 @@ body {
 
 #reset-btn {
     background-color: rgb(240, 15, 15);
+}
+#reset-btn:hover {
+    background-color: rgb(153, 4, 4);
+}
+#start-btn:hover {
+    background-color: rgb(2, 44, 2);
 }
