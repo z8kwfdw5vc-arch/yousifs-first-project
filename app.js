@@ -21,3 +21,16 @@ function startTimer() {
     });
 }
 
+function stopTimer() {
+    clearInterval(timerInterval) {
+        isGameRunning = false;
+        if (score > highScore) {
+            highScore = score;
+            alert(`You Win! New High Score: ${highscore}`);
+        } else {
+            alert(`Game Over! Your Score: ${score} | highScore: ${highScore}`);
+        }
+        } 1000;
+    
+}
+
