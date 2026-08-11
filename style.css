@@ -38,7 +38,8 @@ body {
 #game-container {
     width: 600px;
     height: 400px;
-    background-image:url(assets/duckhunt-bg-4k.png);
+    background-image:url(./assets/duckhunt-bg-4k.png);
+    background-size: cover;
     border: 5px solid darkslategray;
     position: relative;
     overflow: hidden;
@@ -49,8 +50,7 @@ body {
     width: 50px;
     height: 50px;
     background-image:url(assets/duck-target.gif) ;
-    background-size: contain ;
-    
+    background-size: cover;
     position: absolute;
     top: 175px;
     left: 275px;

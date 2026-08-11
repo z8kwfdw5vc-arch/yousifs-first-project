@@ -17,7 +17,7 @@ function startGame() {
     if (isGameRunning) return;
     if (timeLeft === 0) {
         score = 0;
-        timeleft = 30;
+        timeLeft = 30;
         scoreElement.textContent = '0';
         timerElement.textContent = '30'
         targetElement.style.left ='225px';
@@ -32,6 +32,7 @@ function startTimer() {
         timerElement.textContent = timeLeft;
         if (timeLeft === 0) {
             clearInterval(timerInterval);
+            
             isGameRunning = false;
             if (score > highScore) {
                 highScore = score;
@@ -41,14 +42,15 @@ function startTimer() {
                 }
             }
         }, 1000);
+        
     }
     function handleTargetClick() {
         if (!isGameRunning) return;
         score = score + 1;
         scoreElement.textContent = score;
 
-        let randomX = Math.floor(Math.random() * 550) + 'px';
-        let randomY = Math.floor(Math.random() * 350) + 'px';
+        let randomX = Math.floor(Math.random() * 550);
+        let randomY = Math.floor(Math.random() * 350);
         targetElement.style.left = randomX + 'px';
         targetElement.style.top = randomY + 'px';
     }
@@ -60,8 +62,8 @@ function startTimer() {
         timeLeft = 30;
         scoreElement.textContent = '0';
         timerElement.textContent = '30';
-        targetElement.style.left = '225px';
-        targetElement.style.top = '175px';
+        targetElement.style.left = '225px'; // 550/2=225px
+        targetElement.style.top = '175px'; // 350/2=175px
     }
 //event listern
 targetElement.addEventListener('click', handleTargetClick);
