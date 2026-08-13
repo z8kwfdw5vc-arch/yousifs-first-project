@@ -2,37 +2,38 @@ body {
     background-color: #a3a2a2;
     color: #222222;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
 .header-container {
-    background-color: white;
+    background-color: whiat;
     border: 3px solid black;
-    border-radius: 8px;
-    padding: 8px 20px;
-    margin: 10px auto;
-    width: 60vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 15px auto;
+    width: fit-content;
 }
 
 .scoreboard {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     font-size: 18px;
-    width: 70%;
+    width: 600px;
     background: #373d61;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     color: white;
     margin: 10px auto;
     border: 3px solid black;
+    box-sizing: border-box;
 }
 
 #game-container {
@@ -49,15 +50,28 @@ body {
 #target {
     width: 50px;
     height: 50px;
-    background-image:url(assets/duck-target.gif) ;
+    background-image:url(./assets/duck-right.gif) ;
     background-size: cover;
     position: absolute;
     top: 175px;
     left: 275px;
     cursor: pointer;
 }
+#target2 {
+    width: 50px;
+    height: 50px;
+    background-image:url(assets/duck-left.gif) ;
+    background-size: cover;
+    position: absolute;
+    top: 175px;
+    left: 100px;
+    cursor: pointer;
+}
 
 #target:hover {
+    background-color: rgb(228, 74, 74);
+}
+#target2:hover {
     background-color: rgb(228, 74, 74);
 }
 #start-btn,
