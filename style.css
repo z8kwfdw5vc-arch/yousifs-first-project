@@ -1,3 +1,21 @@
+.plyn {
+    
+    width: 70%;
+    height: 70%;
+    border: 4px solid purple;
+   background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+h1 {
+    color: rgb(68, 7, 68);;
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
 
 .navbar {
     display: flex;
