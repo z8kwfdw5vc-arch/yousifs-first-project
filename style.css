@@ -1,5 +1,5 @@
 body {
-    background-color: #a3a2a2;
+    background-color: rgb(197, 121, 197);
     color: #222222;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -16,6 +16,14 @@ h1 {
     text-decoration: underline;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+header-HTP {
+    color: rgb(68, 7, 68);
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 
 .navbar {
     display: flex;
@@ -81,7 +89,14 @@ h1 {
     overflow: hidden;
     margin: 10px auto;
 }
-
+#game-message {
+    background-color: rgb(9, 25, 75);
+    color: snow;
+    border: 2px solid whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 10px;
+    font-size: 24px;
+}
 #target {
     width: 50px;
     height: 50px;
