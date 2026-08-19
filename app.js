@@ -5,6 +5,14 @@ let timerInterval;
 let isGameRunning = false;
 let highScore = 0;
 
+let velX1 = 3;
+let velY1 = 2;
+
+let velX2 = -2;
+let velY2 = 3;
+
+let moveInterval;
+
 
 /*------------------------ Cached Element References ------------------------*/
 const target2Element = document.querySelector('#target2');
@@ -40,6 +48,7 @@ function startGame() {
     }
     isGameRunning = true;
     startTimer();
+    moveInterval = setInterval(moveTargets, 1000 / 60);
 }
 
 function startTimer() {
@@ -65,6 +74,43 @@ function startTimer() {
         }
     }, 1000);
 }
+
+function moveTargets() {
+    if (!isGameRunning)
+        return;
+
+    if (targetElement) {
+
+        let currentX = parseInt(targetElement.style.left) || 275;
+        let currentY = parseInt(targetElement.style.top) ||175;
+
+        currentX += velX1;
+        currentY += velY1;
+
+        if (currentX <= 0 || currentX >= 900) velX1 *= -1;
+        if (currentY <= 0 || currentY >= 700) velY1 *= -1;
+
+        targetElement.style.left = currentX + 'px';
+        targetElement.style.top = currentY + 'px';
+
+    }
+
+    if (target2Element) {
+        let current2X = parseInt(target2Element.style.left) || 100;
+        let current2Y = parseInt(target2Element.style.top) || 175;
+
+        current2X += velX2;
+        current2Y += velY2;
+
+        if (current2X <= 0 || current2X >= 900) velX2 *= -1;
+        if (current2Y <= 0 || current2Y >= 700) velY2 *= -1;
+
+        target2Element.style.left = current2X + 'px';
+        target2Element.style.top = current2Y + 'px';
+    }
+
+}
+
 
 function handleTargetClick() {
     if (!isGameRunning) return;
@@ -98,6 +144,7 @@ function handleTarget2Click() {
 
 function resetGame() {
     clearInterval(timerInterval);
+    clearInterval(moveInterval);
     isGameRunning = false;
 
     score = 0;
