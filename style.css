@@ -37,15 +37,16 @@ h2 {
 
 p {
     text-align: center;
-    width: 60%;
-    height: 40%;
-    margin: 10px auto;
-    padding: 15px 15px;
-    font-size: 35PX;
+    width: 90%;
+    margin: 50px auto;
+    padding: 70px 70px;
+    font-size: 25PX;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: rgb(214, 21, 21);
-    border-color: black;
+    border: 2px solid wheat;
+    background-color: #222222;
+
 }
 
 
