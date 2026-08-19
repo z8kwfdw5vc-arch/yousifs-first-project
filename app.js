@@ -5,6 +5,7 @@ let timerInterval;
 let isGameRunning = false;
 let highScore = 0;
 
+
 /*------------------------ Cached Element References ------------------------*/
 const target2Element = document.querySelector('#target2');
 const targetElement = document.querySelector('#target');
@@ -67,11 +68,13 @@ function startTimer() {
 
 function handleTargetClick() {
     if (!isGameRunning) return;
+    new Audio('./assets/duck-shot.mp3').play();
+
     score = score + 1;
     scoreElement.textContent = score;
 
-    let randomX = Math.floor(Math.random() * 550);
-    let randomY = Math.floor(Math.random() * 350);
+    let randomX = Math.floor(Math.random() * 880);
+    let randomY = Math.floor(Math.random() * 680);
     if (targetElement) {
         targetElement.style.left = randomX + 'px';
         targetElement.style.top = randomY + 'px';
@@ -80,11 +83,13 @@ function handleTargetClick() {
 
 function handleTarget2Click() {
     if (!isGameRunning) return;
+    new Audio('./assets/duck-shot.mp3').play();
+
     score = score + 1;
     scoreElement.textContent = score;
 
-    let randomX = Math.floor(Math.random() * 550);
-    let randomY = Math.floor(Math.random() * 350);
+    let randomX = Math.floor(Math.random() * 760);
+    let randomY = Math.floor(Math.random() * 600);
     if (target2Element) {
         target2Element.style.left = randomX + 'px';
         target2Element.style.top = randomY + 'px';
