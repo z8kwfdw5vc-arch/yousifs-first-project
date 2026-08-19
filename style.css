@@ -147,10 +147,11 @@ p {
 #start-btn,
 #reset-btn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 16px 35px;
+    font-size: 22px;
+    font-weight: blod;
     cursor: pointer;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 20px;
     margin: 20px 5px;
 }
